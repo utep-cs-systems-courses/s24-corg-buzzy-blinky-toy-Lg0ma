@@ -13,7 +13,8 @@ void switch_init()
 char switch_update_interrupt_sense()
 {
   char p2val = P2IN;
-  P2IES |= (p2val & SWITCHES);
+  P2IES |= (p2val & SWITCHES);	/* if switch up, sense down */
+  P2IES &= (p2val | ~SWITCHES);	/* if switch down, sense up */
   return p2val;
 }
 

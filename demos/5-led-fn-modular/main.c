@@ -1,6 +1,6 @@
 //Alternate LEDs from Off, Green, and Red
 #include <msp430.h>
-#include "libTimer.h"
+#include "libTimer.h" 
 #include "led.h"
 
 int main(void) {
@@ -25,6 +25,7 @@ void greenControl(int on)
 
 // blink state machine
 static int blinkLimit = 5;   //  state var representing reciprocal of duty cycle 
+
 void blinkUpdate() // called every 1/250s to blink with duty cycle 1/blinkLimit
 {
   static int blinkCount = 0; // state var representing blink state

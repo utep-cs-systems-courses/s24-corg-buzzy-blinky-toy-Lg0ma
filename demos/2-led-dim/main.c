@@ -69,7 +69,7 @@ void update_250th()
 }
 
 void
-__interrupt_vec(WDT_VECTOR)WDT()/* 250 interrupts/sec */
+__interrupt_vec(WDT_VECTOR) WDT()/* 250 interrupts/sec */
 {
   update_250th();
   update_dim_green();

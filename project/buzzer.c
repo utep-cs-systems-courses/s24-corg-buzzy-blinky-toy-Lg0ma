@@ -1,6 +1,7 @@
 #include <msp430.h>
 #include "libTimer.h"
 #include "buzzer.h"
+#include "notes.h"
 
 void buzzer_init()
 {
@@ -19,4 +20,44 @@ void buzzer_set_period(short cycles)
 }
 
 
-    
+void fur_Elise(){
+
+  int notes[] = {E5,D5,E5,D5,E5,B5,D5,C5,A5,A4,C4,E4,A5,B5,E4,E4,E5,Gsharp5,B5,C5,A4,E5};
+
+  for(int i = 0; i < 22; i++)
+  {
+    buzzer_set_period(notes[i]);
+    __delay_cycles(2000000);
+    if(i == 22)
+      i = 0;
+  }
+  buzzer_set_period(0);
+}
+
+void happy_Bday(){
+
+  int notes[] = {G4,G4,A3,G4,C4,B5,G4,G4,A3,G4,D5,C4,G4,G4,G5,E4,C4,B5,A3,F4,F4,E4,C4,D5,C4};
+
+  for(int i = 0; i < 26; i++)
+  {
+    buzzer_set_period(notes[i]);
+    __delay_cycles(2500000);
+    if(i == 25)
+      i = 0;
+  }
+  buzzer_set_period(0);
+}
+
+void Mario(){
+
+  int notes[] = {E5,E5,E5,C5,E5,G5,G5,C5,G5,E5,A5,B5,Bb5,A5,G5,E5,G5,A5,F5,G5,E5,C5,D5,B5};
+
+  for(int i = 0; i < 25; i++)
+  {
+    buzzer_set_period(notes[i]);
+    __delay_cycles(2500000);
+    if(i == 25)
+      i = 0;
+  }
+  buzzer_set_period(0);
+}

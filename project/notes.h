@@ -10,4 +10,10 @@
 #define A5 880
 #define Bb5 923
 #define B5 987
-
+#define A4 440
+#define C4 261
+#define E4 329
+#define G4 391
+#define A3 220
+#define C1 32
+#define F4 349

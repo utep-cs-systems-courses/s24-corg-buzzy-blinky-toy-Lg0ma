@@ -11,6 +11,9 @@
 
 void switch_init();
 void switch_interrupt_handler();
+char switch_update_interrupt_sense();
+
+extern char switch_state_down;
 
 
 #endif

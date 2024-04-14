@@ -1,6 +1,9 @@
 #include <msp430.h>
-#include "led.h"
 #include "switches.h"
+#include "led.h"
+#include "stateMachines.h"
+
+char switch_state_down;
 
 void switch_init()
 {
@@ -10,6 +13,7 @@ void switch_init()
   P2DIR &= ~SWITCHES;
   switch_update_interrupt_sense();
   switch_interrupt_handler();
+  led_update();
 }
 
 char switch_update_interrupt_sense()
@@ -23,29 +27,29 @@ char switch_update_interrupt_sense()
 void switch_interrupt_handler()
 {
     char p2val = switch_update_interrupt_sense();
-    char sw_button_1 = (p2val & SW1) ? 0 : SW1;
-    char sw_button_2 = (p2val & SW2) ? 0 : SW2;
-    char sw_button_3 = (p2val & SW3) ? 0 : SW3;
-    char sw_button_4 = (p2val & SW4) ? 0 : SW4;
+    char button_1 = (p2val & SW1) ? 0 : SW1;
+    char button_2 = (p2val & SW2) ? 0 : SW2;
+    char button_3 = (p2val & SW3) ? 0 : SW3;
+    char button_4 = (p2val & SW4) ? 0 : SW4;
 
-    if (sw_button_1) 
+    if (button_1) 
     {
-    state_advance(1);
+    next_state(1);
     switch_state_down = 1;
     } 
-    else if (sw_button_2) 
+    else if (button_2) 
     {
-      state_advance(2);
+      next_state(2);
       switch_state_down = 1;
     } 
-    else if (p2val & SW3 ? 0 : 1) 
+    else if (button_3) 
     {
-      state_advance(3);
+      next_state(3);
       switch_state_down = 1;
     } 
-    else if (p2val & SW4 ? 0 : 1)
+    else if (button_4)
     {
-      state_advance(4);
+      next_state(4);
       switch_state_down = 1;
     }
 }

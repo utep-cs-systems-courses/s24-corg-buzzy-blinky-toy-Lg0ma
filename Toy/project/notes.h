@@ -17,3 +17,4 @@
 #define A3 220
 #define C1 32
 #define F4 349
+#define E6 1318

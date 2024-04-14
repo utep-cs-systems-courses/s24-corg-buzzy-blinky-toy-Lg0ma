@@ -4,26 +4,28 @@
 #include "stateMachines.h"
 #include "buzzer.h"
 
-void state_advance(int state) {
+void next_state(int state) {
   leds_off();
   
   switch(state) {
   case 1:
-    red_led_on();
-    music();
+    led_flash(22);
+    fur_Elise();
     leds_off();
     break;
   case 2:
-    led_flash();
+    led_flash(25);
+    happy_Bday();
     leds_off();
     break;
   case 3:
-    police_siren();
+    led_flash(24);
+    Mario();
     leds_off();
     break;
   case 4:
-    red_led_on();
-    star_wars();
+    led_flash(34);
+    Runaway();
     leds_off();
     break;
   default:

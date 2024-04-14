@@ -31,7 +31,7 @@ void fur_Elise()
     buzzer_set_period(notes[i]);
     __delay_cycles(10000000);
     buzzer_set_period(0);
-    __delay_cycles(5000000);
+    __delay_cycles(2500000);
   }
   buzzer_set_period(0);
 }
@@ -46,7 +46,7 @@ void happy_Bday()
     buzzer_set_period(notes[i]);
     __delay_cycles(5000000);
     buzzer_set_period(0);
-    __delay_cycles(5000000);
+    __delay_cycles(4500000);
   }
   buzzer_set_period(0);
 }
@@ -77,7 +77,7 @@ void runaway()
     buzzer_set_period(notes[i]);
     __delay_cycles(10000000);
     buzzer_set_period(0);
-    __delay_cycles(5000000);
+    __delay_cycles(7000000);
 
   }
   buzzer_set_period(0);

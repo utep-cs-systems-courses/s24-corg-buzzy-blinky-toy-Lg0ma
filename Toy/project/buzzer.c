@@ -29,7 +29,7 @@ void fur_Elise()
   for(int i = 0; i < 22; i++)
   {
     buzzer_set_period(notes[i]);
-    __delay_cycles(5000000);
+    __delay_cycles(4500000);
     buzzer_set_period(0);
     __delay_cycles(500000);
   }
@@ -39,9 +39,9 @@ void fur_Elise()
 void happy_Bday()
 {
 
-  int notes[] = {G4,G4,A3,G4,C4,B5,bk,G4,G4,A3,G4,D5,C4,G4,bk,G4,G5,E4,C4,B5,A3,bk,F4,F4,E4,C4,D5,C4};
+  int notes[] = {G4,G4,A3,G4,C4,B5,bk,G4,G4,A3,G4,D5,C4,bk,G4,G4,G5,E4,C4,B5,A3,bk,F4,F4,E4,C4,D5,C4};
 
-  for(int i = 0; i < 25; i++)
+  for(int i = 0; i < 28; i++)
   {
     buzzer_set_period(notes[i]);
     __delay_cycles(5000000);
@@ -56,7 +56,7 @@ void Mario()
 
   int notes[] = {E5,E5,E5,C5,E5,G5,bk,G5,bk,C5,G5,E5,A5,B5,Bb5,A5,G5,E5,G5,A5,F5,G5,E5,C5,D5,B5};
 
-  for(int i = 0; i < 24; i++)
+  for(int i = 0; i < 26; i++)
   {
     buzzer_set_period(notes[i]);
     __delay_cycles(5000000);

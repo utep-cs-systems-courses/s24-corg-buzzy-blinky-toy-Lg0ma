@@ -29,7 +29,7 @@ void fur_Elise()
   for(int i = 0; i < 22; i++)
   {
     buzzer_set_period(notes[i]);
-    __delay_cycles(10000000);
+    __delay_cycles(5000000);
     buzzer_set_period(0);
     __delay_cycles(500000);
   }

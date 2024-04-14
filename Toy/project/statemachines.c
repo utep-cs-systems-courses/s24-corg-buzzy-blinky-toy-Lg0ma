@@ -25,7 +25,7 @@ void next_state(int state) {
     break;
   case 4:
     led_flash(34);
-    Runaway();
+    runaway();
     leds_off();
     break;
   default:

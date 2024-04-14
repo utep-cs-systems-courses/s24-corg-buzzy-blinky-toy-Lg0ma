@@ -8,7 +8,7 @@ char switch_state_down;
 void switch_init()
 {
   P2REN |= SWITCHES;
-  P2IE |= SWITTCHES;
+  P2IE |= SWITCHES;
   P2OUT |= SWITCHES;
   P2DIR &= ~SWITCHES;
   switch_update_interrupt_sense();

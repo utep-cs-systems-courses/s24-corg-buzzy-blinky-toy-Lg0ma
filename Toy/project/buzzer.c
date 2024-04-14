@@ -39,7 +39,7 @@ void fur_Elise()
 void happy_Bday()
 {
 
-  int notes[] = {G4,G4,A3,G4,C4,B5,bk,G4,G4,A3,G4,D5,C4,bk,G4,G4,G5,E4,C4,B5,A3,bk,F4,F4,E4,C4,D5,C4};
+  int notes[] = {G4,G4,A3,G4,C4,B5,bk,G4,G4,A3,G4,D5,C4,G4,bk,G4,G5,E4,C4,B5,A3,bk,F4,F4,E4,C4,D5,C4};
 
   for(int i = 0; i < 25; i++)
   {

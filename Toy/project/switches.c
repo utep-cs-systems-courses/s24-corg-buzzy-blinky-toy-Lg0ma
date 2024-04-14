@@ -1,7 +1,7 @@
 #include <msp430.h>
 #include "switches.h"
 #include "led.h"
-#include "stateMachines.h"
+#include "statemachines.h"
 
 char switch_state_down;
 

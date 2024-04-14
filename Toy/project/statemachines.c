@@ -1,7 +1,7 @@
 #include <msp430.h>
 #include "led.h"
 #include "switches.h"
-#include "stateMachines.h"
+#include "statemachines.h"
 #include "buzzer.h"
 
 void next_state(int state) {

@@ -1,5 +1,5 @@
 #include <msp430.h>
-#include "stateMachines.h"
+#include "statemachines.h"
 
 
 void

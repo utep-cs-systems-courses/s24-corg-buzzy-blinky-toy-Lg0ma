@@ -2,7 +2,7 @@
 #include "libTimer.h"
 #include "buzzer.h"
 #include "notes.h"
-#include "stateMachines.h"
+#include "statemachines.h"
 
 
 void buzzer_init()

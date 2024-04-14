@@ -18,3 +18,5 @@
 #define C1 32
 #define F4 349
 #define E6 1318
+#define bk 0
+#define D4 293

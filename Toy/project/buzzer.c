@@ -39,7 +39,7 @@ void fur_Elise()
 void happy_Bday()
 {
 
-  int notes[] = {G4,G4,A3,G4,C4,B5,G4,G4,A3,G4,D5,C4,G4,G4,G5,E4,C4,B5,A3,F4,F4,E4,C4,D5,C4};
+  int notes[] = {G4,G4,A3,G4,C4,B5,bk,G4,G4,A3,G4,D5,C4,bk,G4,G4,G5,E4,C4,B5,A3,bk,F4,F4,E4,C4,D5,C4};
 
   for(int i = 0; i < 25; i++)
   {
@@ -54,7 +54,7 @@ void happy_Bday()
 void Mario()
 {
 
-  int notes[] = {E5,E5,E5,C5,E5,G5,G5,C5,G5,E5,A5,B5,Bb5,A5,G5,E5,G5,A5,F5,G5,E5,C5,D5,B5};
+  int notes[] = {E5,E5,E5,C5,E5,G5,bk,G5,bk,C5,G5,E5,A5,B5,Bb5,A5,G5,E5,G5,A5,F5,G5,E5,C5,D5,B5};
 
   for(int i = 0; i < 24; i++)
   {
@@ -68,10 +68,9 @@ void Mario()
 
 void runaway()
 {
-  int loop = 0;
-  int notes[] = {E6,E6,E6,E5,E6,E6,E6,D5,E6,E6,E6,C5,A5,A5,A5,G5,E6};
+  int notes[] = {E6,E6,E6,E4,E6,E6,E6,D4,E6,E6,E6,C4,A5,A5,A5,G5,E6,E6,E6,E4,E6,E6,E6,D4,E6,E6,E6,C4,A5,A5,A5,G5};
 
-  for(int i = 0; i < 17; i++)
+  for(int i = 0; i < 32; i++)
   {
 
     buzzer_set_period(notes[i]);

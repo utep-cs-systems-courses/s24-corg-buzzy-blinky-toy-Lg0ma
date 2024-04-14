@@ -31,7 +31,7 @@ void fur_Elise()
     buzzer_set_period(notes[i]);
     __delay_cycles(10000000);
     buzzer_set_period(0);
-    __delay_cycles(10000000);
+    __delay_cycles(5000000);
   }
   buzzer_set_period(0);
 }
@@ -46,7 +46,7 @@ void happy_Bday()
     buzzer_set_period(notes[i]);
     __delay_cycles(5000000);
     buzzer_set_period(0);
-    __delay_cycles(10000000);
+    __delay_cycles(5000000);
   }
   buzzer_set_period(0);
 }
@@ -61,7 +61,7 @@ void Mario()
     buzzer_set_period(notes[i]);
     __delay_cycles(5000000);
     buzzer_set_period(0);
-    __delay_cycles(10000000);
+    __delay_cycles(5000000);
   }
   buzzer_set_period(0);
 }
@@ -73,18 +73,11 @@ void runaway()
 
   for(int i = 0; i < 17; i++)
   {
-    if(loop == 2)
-      break;
 
-    if(i == 17)
-    {
-      i = 0;
-      loop++;
-    }
     buzzer_set_period(notes[i]);
     __delay_cycles(10000000);
     buzzer_set_period(0);
-    __delay_cycles(10000000);
+    __delay_cycles(5000000);
 
   }
   buzzer_set_period(0);

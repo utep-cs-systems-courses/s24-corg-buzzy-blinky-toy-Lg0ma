@@ -9,22 +9,22 @@ void next_state(int state) {
   
   switch(state) {
   case 1:
-    led_flash(22);
+    led_flash(2);
     fur_Elise();
     leds_off();
     break;
   case 2:
-    led_flash(25);
+    led_flash(2);
     happy_Bday();
     leds_off();
     break;
   case 3:
-    led_flash(24);
+    led_flash(2);
     Mario();
     leds_off();
     break;
   case 4:
-    led_flash(34);
+    led_flash(2);
     runaway();
     leds_off();
     break;
